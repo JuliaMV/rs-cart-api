@@ -36,11 +36,10 @@ async function run() {
         )
     `);
 
-    const userId = 'a7ab9250-3c96-4d09-8e79-424912e280f0';
     await client.query(`
         insert into carts (id, user_id, created_at, updated_at, status) values
-        ('4f368885-8b10-4ae2-8252-6d959bd8afa4', '${userId}', '2023-05-16', '2023-05-16', 'OPEN'),
-        ('b2c24323-72c5-45fe-9fbc-07427629a149', '${userId}', '2023-05-10', '2023-05-12', 'ORDERED')
+        ('4f368885-8b10-4ae2-8252-6d959bd8afa4', 'a7ab9250-3c96-4d09-8e79-424912e280f0', '2023-05-16', '2023-05-16', 'OPEN'),
+        ('b2c24323-72c5-45fe-9fbc-07427629a149', 'f7ab9250-3c00-4d09-8e79-424912e280f0', '2023-05-10', '2023-05-12', 'ORDERED')
     `);
 
     await client.query(`
