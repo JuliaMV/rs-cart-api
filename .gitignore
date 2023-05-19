@@ -1,6 +1,10 @@
+#
+.env
+
 # compiled output
 /dist
 /node_modules
+.serverless
 
 # Logs
 logs
